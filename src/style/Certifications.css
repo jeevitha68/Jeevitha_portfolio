@@ -1,0 +1,126 @@
+/* Certifications Section */
+.certifications-section {
+  padding: 100px 0;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.certification-card-col {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.certification-card-view {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border: 1px solid #6c63ff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(108, 99, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  backdrop-filter: blur(5px);
+}
+
+.certification-card-view:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.certification-header {
+  display: flex;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.certification-img-container {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.certification-img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: white;
+  padding: 5px;
+}
+
+.certification-title {
+  flex: 1;
+}
+
+.certification-card-view .card-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #c770f0;
+}
+
+.certification-card-view .card-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #b8b8b8 !important;
+}
+
+/* Show More Button */
+.show-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  margin: 30px auto;
+  display: block;
+  background-color: #6c63ff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.show-more-btn:hover {
+  background-color: #5549f1;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .certification-card-col {
+    padding: 0 15px;
+  }
+  
+  .certification-card-view {
+    max-width: 100%;
+    margin: 0 10px 25px 10px;
+  }
+  
+  .certification-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .certification-img-container {
+    margin: 0 auto 15px;
+  }
+  
+  .certifications-section {
+    padding: 60px 0;
+  }
+}

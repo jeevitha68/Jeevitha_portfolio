@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Education Section Styles */
+.education-section {
+  padding: 100px 0;
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.education-card-view {
+  color: white;
+  background-color: transparent;
+  padding: 20px 30px;
+  border: 1px solid #6c63ff;
+  border-radius: 10px;
+  height: 100%;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-card-view:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.education-card-view .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #c770f0;
+}
+
+.education-card-view .card-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #b8b8b8 !important;
+}
+
+.education-card-view .card-text {
+  color: #e6e6e6;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for education section */
+@media (max-width: 768px) {
+  .education-card-view {
+    margin: 10px 0;
+  }
+  
+  .education-section {
+    padding: 60px 0;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
